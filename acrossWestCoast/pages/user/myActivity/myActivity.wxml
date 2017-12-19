@@ -1,0 +1,24 @@
+
+<!-- 活动列表 -->
+<view class="swiper-box" style='height: 100%'>
+  <scroll-view  scroll-y="true" bindscrolltolower="scrolltolower" class='swiper-item-one'>
+    <block wx:if="{{contents.scalar==false}}">
+      <view class='no-pinglun'>您还没有参加活动哟</view>
+    </block>
+    <block wx:else>
+      <view class='active-item' wx:for="{{contents}}" wx:key="{{index}}">
+        <image src='{{item.cover_image}}' class='active-backImg'></image>
+        <view class='active-item-contant' bindtap='toXcxDetail' data-id="{{item.id}}">
+          <view class='active-item-con1'>{{item.title}}</view>
+          <block wx:if="{{timestamp < item.eTime}}">
+            <view class='active-item-con2'>进行中</view>
+          </block>
+          <block wx:else>
+            <view class='active-item-con2-2'>已结束</view>
+          </block>
+          <view class='active-item-con3'>已有{{item.signCount}}人参与</view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+</view>

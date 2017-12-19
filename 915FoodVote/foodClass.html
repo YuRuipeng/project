@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>菜品类</title>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/dialog.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/mui.min.js"></script>
+    <script>
+        mui.init();
+    </script>
+</head>
+<body class="foodClassBodyBg">
+    <div class="mui-content">
+        <!-- m-915EatQD-foodClass-nav -->
+        <nav class="m-915EatQD-foodClass-nav">
+            <ul>
+                <li class="active"><a href="#">港味粤菜</a></li>
+                <li><a href="#">麻辣川湘</a></li>
+                <li><a href="#">面包甜点</a></li>
+                <li><a href="#">东南亚菜</a></li>
+            </ul>
+        </nav>
+        <!-- m-915EatQD-foodClass-searchBank -->
+        <div class="m-915EatQD-foodClass-searchBank mui-clearfix">
+            <div class="search mui-pull-left">
+                <input type="text" placeholder="搜索编号">
+            </div>
+            <div class="bank mui-pull-right">
+                <span>
+                    编号
+                    <i class="icon_up_active"></i>
+                    <i class="icon_down"></i>
+                </span>
+                <span>
+                    排名
+                    <i class="icon_up"></i>
+                    <i class="icon_down_active"></i>
+                </span>
+            </div>
+        </div>
+        <!-- m-915EatQD-foodClass-numProduct -->
+        <div class="m-915EatQD-foodClass-numProduct">
+            <form action="">
+                <ul>
+                    <li>
+                        <span>01号   高汤排骨面（2736票）</span>
+                        <div class="mui-radio">
+                            <input name="radio1" value="Item 1" type="radio">
+                        </div>
+                    </li>
+                    <li>
+                        <span>02号   金牌蒜香骨（2984票）</span>
+                        <div class="mui-radio">
+                            <input name="radio1" value="Item 2" type="radio">
+                        </div>
+                    </li>
+                    <li>
+                        <span>03号   极品红烧肉（8374票）</span>
+                        <div class="mui-radio">
+                            <input name="radio1" value="Item 3" type="radio">
+                        </div>
+                    </li>
+                </ul>
+                <div class="vote">
+                    <input type="button" value="">
+                    <span>投票</span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 输入密码 -->
+    <!--<div class="m-915EatQD-reviewDialog-bg" style="display: block"></div>-->
+    <!--<div class="m-915EatQD-dialogPassword">-->
+        <!--<div class="dialogPassword-dotted">-->
+            <!--<h3>请输入密码</h3>-->
+            <!--<div class="mui-clearfix">-->
+                <!--<input type="password" value="" name="sn1" id="sn1" maxlength="1">-->
+                <!--<input type="password" value="" name="sn2" id="sn2" maxlength="1">-->
+                <!--<input type="password" value="" name="sn3" id="sn3" maxlength="1">-->
+                <!--<input type="password" value="" name="sn4" id="sn4" maxlength="1">-->
+            <!--</div>-->
+            <!--<a href="#" class="btn_ok">确定</a>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!-- 投票成功 v2.0 -->
+    <div class="m-915EatQD-reviewDialog-bg" style="display: block;"></div>
+    <form action="">
+        <div class="m-915EatQD-dialog-successV2">
+            <div class="dialog-successV2-content">
+                <h2>恭喜您获得</h2>
+                <h3>代金券一张</h3>
+                <div id="inputBox">
+                    <div><input type="text" placeholder="请输入手机号"></div>
+                    <div><input type="text" placeholder="请输入验证码"><input type="button" class="sendCode" id="btnSendCode" value="发送验证码"></div>
+                </div>
+            </div>
+            <div class="dialog-successV2-close">
+                <img src="img/icon_cclose.png" alt="">
+            </div>
+        </div>
+        <input type="button" class="dialog-successV2-ok" value="确定">
+    </form>
+
+
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/dialog.js"></script>
+    <script>
+        !function (win, $) {
+            var dialog = win.YDUI.dialog;
+//            $('.vote').on('click', function () {
+//                dialog.toast('不可以重复投票', 'none', 10000);
+//            });
+//            $('.vote').on('click', function () {
+//                dialog.toast('投票已结束', 'none', 10000);
+//            });
+//            $('.vote').on('click', function () {
+//                dialog.toast('投票失败！', 'none', 10000);
+//            });
+
+            // 投票成功
+//            var str='<div class="m-915EatQD-reviewDialog-bg" style="display: block;"></div><div class="m-915EatQD-dialog-success"><img src="img/dialog_success.png" alt=""></div>';
+//            $(".vote,.vote span,.vote input[type=submit]").on('click',function () {
+//                $("body").append(str);
+//                setTimeout(function () {
+//                    $(".m-915EatQD-reviewDialog-bg").hide();
+//                    $(".m-915EatQD-dialog-success").hide();
+//                },2000)
+//            });
+
+            // 输入密码
+            $("#sn1").focus();
+            $("input[name^='sn']").each(function () {
+                $(this).keyup(function (e) {
+                    e = window.event || e;
+                    var k = e.keyCode || e.which;
+                    console.log(k);//k值就是当前输入的值
+                    if(k==8){
+                        if ($(this).val().length < 1){
+                            $(this).prev().focus();
+                        }
+                    }else{
+                        if ($(this).val().length > 0) {
+                            $(this).next().focus();
+                        }
+                    }
+                });
+            });
+
+
+            var InterValObj; //timer变量，控制时间
+            var count = 60; //间隔函数，1秒执行
+            var curCount;//当前剩余秒数
+            var code = ""; //验证码
+            function sendMessage() {
+                curCount = count;
+                //设置button效果，开始计时
+                $("#btnSendCode").attr("disabled", "true");
+                $("#btnSendCode").val( + curCount + "秒再获取");
+                InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
+            }
+            //timer处理函数
+            function SetRemainTime() {
+                if (curCount == 0) {
+                    window.clearInterval(InterValObj);//停止计时器
+                    $("#btnSendCode").removeAttr("disabled");//启用按钮
+                    $("#btnSendCode").val("重新发送验证码");
+                    code = ""; //清除验证码。如果不清除，过时间后，输入收到的验证码依然有效
+                }
+                else {
+                    curCount--;
+                    $("#btnSendCode").val( + curCount + "秒再获取");
+                }
+            }
+
+            $("#btnSendCode").on('click',function () {
+                sendMessage();
+            });
+
+
+        }(window,jQuery);
+
+    </script>
+</body>
+</html>

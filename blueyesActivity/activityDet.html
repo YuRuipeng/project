@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>活动详情</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/details.css">
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="image/activity-banner.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="image/activity-banner.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="image/activity-banner.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="image/activity-banner.png" alt="">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="activityDet-top">
+        <p class="activityDet-top-title">青岛崂山摄影大赛进行中报名参加吧</p>
+        <p class="activityDet-top-date">活动时间：2017-09-26 至 2017-11-04</p>
+        <div class="activityDet-top-position">
+            <div class="activityDet-top-position-icon">
+                <img src="image/icon_position.png" alt="">
+            </div>
+            <p class="activityDet-top-position-text">青岛李沧区融创都会中心</p>
+        </div>
+    </div>
+    <div class="activityDet-sponsor">
+        <div class="activityDet-sponsor-icon">
+            <img src="image/icon_qizhi.png" alt="">
+        </div>
+        <p class="activityDet-sponsor-text1">主办方</p>
+        <p class="activityDet-sponsor-text2">青岛市教育局和青岛市广播电视台</p>
+    </div>
+    <div class="activityDet-content">
+        <p class="activityDet-content-title">活动详情</p>
+        <div class="activityDet-content-text">
+            <p>听说青岛市教育局和青岛市广播电视台（集团）要开影视剧栏目啦？！</p>
+        </div>
+        <div class="activityDet-content-more">
+            <p class="activityDet-content-more-text">查看详情</p>
+            <div class="activityDet-content-more-icon">
+                <img src="image/icon_back.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="activityDet-apply">
+        <p class="activityDet-apply-title">报名</p>
+        <div class="activityDet-apply-content">
+            <div class="activityDet-apply-content-icon">
+                <img src="image/icon_headImg.png" alt="">
+            </div>
+            <div class="activityDet-apply-content-text">
+                <p class="activityDet-apply-content-text-p1">瑞雪吉祥</p>
+                <p class="activityDet-apply-content-text-p2">精彩活动不容错过</p>
+            </div>
+        </div>
+        <div class="activityDet-apply-null"></div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/vue.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true
+        });
+    </script>
+</body>
+</html>

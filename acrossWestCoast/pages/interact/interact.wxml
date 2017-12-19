@@ -1,0 +1,31 @@
+<import src="../../template/lists" />
+<!-- 标题 -->
+<view class='interacts-top'>
+  <view class='interacts-top-title'>热门话题</view>
+  <image src='../../images/icon/icon_hengxian@2x.png' class='interacts-top-img'></image>
+</view>
+<!-- 横向滚动 -->
+<scroll-view class='interacts-swiper' scroll-x="true">
+  <block wx:if="{{total_count==0}}">
+    <view class='no-pinglun'>暂无话题</view>
+  </block>
+  <block wx:else>
+    <block wx:for="{{array}}" wx:for-index="idx" wx:key="{{idx}}">
+      <view bindtap='doTopic' data-id='{{item.id}}' class='doTopic'>
+        <view class="interacts-swiper-list">
+          <image src='{{item.logo}}'></image>
+          <view>#{{item.name}}#</view>
+        </view>
+      </view>
+    </block>
+  </block>
+</scroll-view>
+<!-- 微博列表 -->
+<block wx:if="{{lists==''}}">
+  <view class='no-pinglun'>抢个沙发吧！！</view>
+</block>
+<block wx:else>
+  <template is="lists" data="{{lists}}" />
+</block>
+<!-- 添加微博 -->
+<image src='../../images/icon/icon_commit.png' class='addweibo' bindtap='addweibo'></image>

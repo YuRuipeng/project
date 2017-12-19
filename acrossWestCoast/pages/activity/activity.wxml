@@ -1,0 +1,33 @@
+<!-- 活动分类 -->
+<view class="swiper-tab">
+  <view class='swiper-tab-lists'>
+    <text class="swiper-tab-list {{selected?'on':' '}}" bindtap="swichNav1">进行中</text>
+  </view>
+  <view class='swiper-tab-lists'>
+    <text class="swiper-tab-list {{selected1 ? 'on' : ''}}" bindtap="swichNav2">已结束</text>
+  </view>
+</view>
+<!-- 活动列表 -->
+<view class="swiper-box">
+  <scroll-view class="{{selected?'show':'hidden'}}" scroll-y="true" bindscrolltolower="scrolltolower" class='swiper-item-one'>
+    <block wx:if="{{contents==undefind}}">
+      <view class='no-pinglun'>暂无活动</view>
+    </block>
+    <block wx:else>
+      <view class='active-item' wx:for="{{contents}}" wx:key="{{index}}">
+        <image src='{{item.cover_image}}' class='active-backImg'></image>
+        <view class='active-item-contant' bindtap='toXcxDetail' data-id="{{item.id}}">
+          <view class='active-item-con1'>{{item.title}}</view>
+          <view class='active-item-con2'>{{select}}</view>
+          <view class='active-item-con3'>已有{{item.signCount}}人参与</view>
+          <block wx:if="{{item.check_isSign}}">
+            <view class='active-item-con4'>您已参与</view>
+          </block>
+          <block wx:else>
+            <view class='active-item-con4'></view>
+          </block>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+</view>

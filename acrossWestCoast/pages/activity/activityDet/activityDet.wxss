@@ -1,0 +1,139 @@
+@import '../../../wxParser/index.wxss';
+
+.activityDet-top{
+  width: 100%;
+  max-height: 504rpx;
+  position: relative;
+  background: #f9f9f9;
+}
+.activityDet-top image{
+  width: 100%;
+  max-height: 504rpx;
+}
+.activityDet-top-view1{
+  width: 118rpx;
+  height: 50rpx;
+  position: absolute;
+  left: 40rpx;
+  bottom: 200rpx;
+  background: #00b0ec;
+  color: #fff;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 24rpx;
+}
+.activityDet-top-view2{
+  width: 95%;
+  position: absolute;
+  bottom: 70rpx;
+  padding-left: 40rpx;
+  font-size: 36rpx;
+  color: #fff;
+}
+.activityDet-date{
+  width: 100%;
+  height: 158rpx;
+  background: #f9f9f9;
+  overflow-x: hidden;
+}
+.activityDet-date-list{
+  width: 100%;
+  height: 50%;
+  padding-left: 24rpx;
+}
+.activityDet-date-list image{
+  float: left;
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 15rpx;
+}
+.activityDet-date-list view{
+  float: left;
+  font-size: 24rpx;
+  color: #333;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.activityDet-date-list1 image{
+  margin-top: 30rpx;
+}
+.activityDet-date-list1 view{
+  margin-top: 30rpx;
+}
+.activityDet-comment{
+  width: 95%;
+  margin-top: 20rpx;
+  padding-bottom: 92rpx;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.activityDet-comment-title{
+  width: 100%;
+  height: 114rpx;
+  padding-left: 39rpx;
+  padding-top: 60rpx;
+}
+.activityDet-comment-title view{
+  width: 50%;
+  border-left: 8rpx solid #00b0ec;
+  padding-left: 24rpx;
+  font-size: 36rpx;
+  color: #333;
+}
+.activityDet-comment-text{
+  width: 90%;
+  margin: 0 auto;
+  font-size: 30rpx;
+  color: #999;
+  line-height: 60rpx;
+  text-indent: 60rpx;
+}
+.activityDet-comment-img{
+  width: 100%;
+  margin: 55rpx 0;
+}
+.activityDet-footer{
+  width: 100%;
+  height: 92rpx;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  overflow-x: hidden;
+}
+.activityDet-footte-btn{
+  width: 100%;
+  height: 92rpx;
+  float: left;
+  background: #00b0ec;
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 92rpx;
+}
+.activityDet-date-people{
+  width: 100%;
+  height: 80rpx;
+  margin-top: 20rpx;
+  background: #f9f9f9;
+  overflow-x: hidden;
+}
+.activityDet-date-people view{
+  width: 50%;
+  height: 100%;
+  line-height: 80rpx;
+  font-size: 24rpx;
+  color: #333;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-left: 39rpx;
+  float: left;
+}
+.activityDet-date-people image{
+  float:right;
+  width:20rpx;
+  height:30rpx;
+  margin-right:39rpx;
+  margin-top:30rpx;
+}

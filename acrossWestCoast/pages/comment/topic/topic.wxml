@@ -1,0 +1,21 @@
+<form>
+  <view class='commit-top'>
+    <view class='commit-false' bindtap='navigateBack'>取消</view>
+    <view wx:if="{{content== ''&& imgLength==0}}" class='commit-true'>发布</view> 
+    <button wx:else class='commit-true' style='color:#fff' bindtap='doSend'>发布</button>
+  </view>
+  <view class='commit-textarea'>
+    <textarea placeholder="评论一下...（140个汉字以内）" value='#{{name}}#' bindinput='BindInputTap' auto-focus></textarea>
+  </view>
+</form>
+<!-- <image src='../../../images/icon/icon_imgss.png' class='addImg' bindtap='addImg' ></image> -->
+<block  wx:for='{{tempFilePaths}}' wx:key="{{index}}">
+  <view class='saveImg'>
+    <image src='{{item.path}}' class='saveImg-img'>
+      <image src='../../../images/icon/shanchu_icon.png' class='saveImg-del' bindtap='saveImgDel' id='{{item.id}}'></image>
+    </image>
+  </view>
+</block>
+<view class='oddImg'  bindtap='addImg'>
+  <image src='../../../images/icon/odd.png'></image>
+</view>

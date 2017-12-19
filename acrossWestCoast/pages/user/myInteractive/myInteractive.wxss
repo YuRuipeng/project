@@ -1,0 +1,117 @@
+@import "../../../template/lists.wxss"; 
+ .no-pinglun{
+  width: 100%;
+  height: 92rpx;
+  line-height: 92rpx;
+  text-align: center;
+  font-size: 35rpx;
+  color: #999;
+} 
+/* navigator{
+  width: 100%;
+  height: 185rpx;
+}
+.myInteractive{
+  width: 100%;
+  height: 185rpx;
+  border: 2rpx solid #d2d2d2;
+}
+.myInteractive-image{
+  width: 16%;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+.myInteractive-image image{
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%,-50%);
+}
+.myInteractive-mid{
+  width: 66%;
+  height: 100%;
+  float: left;
+}
+.myInteractive-mid-title{
+  width: 100%;
+  height: 70rpx;
+  font-size: 30rpx;
+  color: #333;
+  line-height: 100rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.myInteractive-mid-title text{
+  color: #00b0ec;
+  margin-right:20rpx;
+}
+.myInteractive-mid-contant{
+  width: 100%;
+  height: 65rpx;
+  font-size: 30rpx;
+  color: #999;
+  line-height: 65rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.myInteractive-mid-date{
+  width: 100%;
+  height: 50rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+.myInteractive-right{
+  width: 18%;
+  height: 100%;
+  float: left;
+}
+.myInteractive-right-commit{
+  width: 75%;
+  height: 77rpx;
+  font-size: 18rpx;
+  color: #999;
+  padding-top: 40rpx;
+  margin: 0 auto;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:3; 
+}
+.myInteractive-right-commit image{
+  max-width: 75%;
+  max-height: 77rpx;
+}
+.myInteractive-right-zan{
+  width: 50%;
+  height: 65rpx;
+  float: left;
+  position: relative;
+}
+.myInteractive-right-zan image{
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.myInteractive-right-pinglun{
+  width: 50%;
+  height: 65rpx;
+  float: left;
+  position: relative;
+}
+.myInteractive-right-pinglun image{
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+} */

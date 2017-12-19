@@ -1,0 +1,79 @@
+ @import "../../../template/lists.wxss"; 
+page{
+  width:100%;
+  height:100%;
+}
+.interactDet{
+  width: 100%;
+  padding-bottom: 92rpx;
+  overflow-y: auto;
+}
+.interactDet-top{
+  width: 100%;
+  height: 404rpx;
+  position: relative;
+}
+.interactDet-top-back{
+  width: 100%;
+  max-height: 404rpx;
+}
+.interactDet-top-commit{
+  width: 110rpx;
+  height: 111rpx;
+  position: absolute;
+  right: 75rpx;
+  bottom: -55rpx;
+}
+.interactDet-title{
+  width: 70%;
+  height: 152rpx;
+  padding-left: 110rpx;
+  padding-top: 15rpx;
+}
+.interactDet-title-big{
+  font-size: 36rpx;
+  color: #333;
+  margin-top: 20rpx;
+}
+.interactDet-title-small{
+  font-size: 24rpx;
+  color: #ccc;
+  margin-top: 15rpx;
+}
+.indexDet-footer{
+  width: 100%;
+  height: 92rpx;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+}
+.indexDet-footte-list{
+  flex: 1;
+}
+.indexDet-footte-list view{
+  width: 100%;
+  text-align: center;
+  height: 38rpx;
+  line-height: 38rpx;
+  font-size: 20rpx;
+  color: #333;
+}
+.indexDet-footte-list .indexDet-footte-list-cion{
+  width: 42rpx;
+  height: 54rpx;
+  margin: 0 auto;
+}
+.indexDet-footte-list .indexDet-footte-list-cion image{
+  height: 42rpx;
+  width: 42rpx;
+  margin-top: 10rpx;
+}
+.no-pinglun{
+  width: 100%;
+  height: 92rpx;
+  line-height: 92rpx;
+  text-align: center;
+  font-size: 35rpx;
+  color: #999;
+}

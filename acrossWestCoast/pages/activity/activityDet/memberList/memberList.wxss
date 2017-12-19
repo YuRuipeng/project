@@ -1,0 +1,36 @@
+.memberList{
+  width: 100%;
+  height: 180rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.memberList-image{
+  width: 30%;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+.memberList-image image{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.memberList-name{
+  width: 60%;
+  height: 100%;
+  line-height: 180rpx;
+  color: #333;
+  font-size: 35rpx;
+  float: left;
+}
+.no-pinglun{
+  width: 100%;
+  height: 92rpx;
+  line-height: 92rpx;
+  text-align: center;
+  font-size: 35rpx;
+  color: #999;
+}

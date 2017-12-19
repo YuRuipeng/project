@@ -1,0 +1,303 @@
+/**/
+p{
+	margin: 0;
+}
+.mui-off-canvas-wrap .mui-bar {
+  background: #242834;
+  border-bottom: 1px solid #474c59;
+}
+.mui-bar .mui-title {
+  color: #fff;
+  font-size: 16px;
+}
+.mui-bar-nav.mui-bar .mui-icon {
+  color: #077bd5;
+}
+.mui-bar-nav ~ .mui-content {
+  background: #242834;
+}
+.weforms-header {
+  width: 100%;
+  height: 43px;
+}
+.mui-scroll-wrapper {
+  overflow-y: scroll;
+}
+.weforms-shaixuan {
+  width: 100%;
+  height: 58px;
+  border-bottom: 1px solid #474c59;
+  margin-left: 5px;
+}
+.weforms-shaixuan .weforms-shaixuan-left {
+  width: 45%;
+  height: 100%;
+  float: left;
+}
+.weforms-shaixuan .weforms-shaixuan-left li {
+  height: 100%;
+  float: left;
+  padding: 0 5px;
+  line-height: 58px;
+  color: #adb5cb;
+  font-size: 14px;
+}
+.weforms-shaixuan .weforms-shaixuan-left .active {
+  color: #077bd5;
+}
+.weforms-shaixuan .weforms-shaixuan-date {
+  width: 52%;
+  float: left;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  padding: 3px 0 0 7px;
+  margin-top: 14px;
+}
+.weforms-shaixuan .weforms-shaixuan-date i {
+  color: #fff;
+}
+.weforms-shaixuan .weforms-shaixuan-date img {
+  width: 18px;
+  float: right;
+  margin-right: 12px;
+  margin-top: 2px;
+}
+.weforms-forms {
+  width: 100%;
+  height: 334px;
+  background: #363c4a;
+  margin-bottom: 15px;
+}
+.weforms-forms .weforms-forms-title {
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-bottom: 1px solid #474c59;
+  font-size: 16px;
+}
+input[type=color],
+input[type=date],
+input[type=datetime-local],
+input[type=datetime],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week],
+select,
+textarea {
+  padding: 0;
+  margin-bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  border: 0;
+  color: #fff;
+  width: 68px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/**/
+.weforms-forms-box1-title{
+	height: 49px;
+	width:100%;
+	
+}
+.weforms-forms-box1-title div{
+	float:left;
+	width: 50%;
+	height: 49px;
+	line-height: 49px;
+	text-align: center;
+	overflow: hidden;
+}
+.weforms-forms-box1-title div span{
+	display: block;
+	float:left;
+	height: 49px;
+	line-height: 49px;
+	color: #adb5cb;
+	font-size: 14px;
+	margin-right: 5px;
+}
+.weforms-forms-box1-title div i{
+	display: block;
+	float:left;
+	width:11px;
+	height: 11px;
+	background:#4ab4ff;
+	border-radius: 2px;
+	margin-top: 20px;
+	margin-left: 10%;
+	margin-right: 5px;
+}
+.weforms-forms-box1-title div:first-child i{
+	background:#92d2ff;
+}
+
+.weforms-forms-box1-title div p{
+	font-size: 18px;
+	color:#0091ff;
+	float:left;
+	
+}
+.weforms-forms-box3-title{
+	height: 49px;
+	width:100%;
+	
+}
+.weforms-forms-box3-title div{
+	float:left;
+	width: 50%;
+	height: 49px;
+	line-height: 49px;
+	text-align: center;
+	overflow: hidden
+}
+.weforms-forms-box3-title div span{
+	display: block;
+	float:left;
+	height: 49px;
+	line-height: 49px;
+	color: #adb5cb;
+	font-size: 14px;
+	margin-right: 5px;
+}
+.weforms-forms-box3-title div i{
+	display: block;
+	float:left;
+	width:11px;
+	height: 11px;
+	background:#4ab4ff;
+	border-radius: 2px;
+	margin-top: 20px;
+	margin-left: 10%;
+	margin-right: 5px;
+}
+.weforms-forms-box3-title div:first-child i{
+	background:#92d2ff;
+}
+.weforms-forms-box3-title div p{
+	font-size: 18px;
+	color:#0091ff;
+	float:left;
+	
+}
+.weforms-forms-box3-title div:last-child i{
+	margin-left: 0;
+}
+
+
+.weforms-forms-box2{
+	position: relative;
+}
+.weforms-forms-box2-title{
+	text-align: center;
+	position: absolute;
+	z-index: 50;
+	width:100%;
+	top: 10%;
+}
+.weforms-forms-box2-title h2{
+	text-align: center;
+	font-size: 12px;
+	color: #adb5cb;
+}
+.weforms-forms-box2-title p{
+	text-align: center;
+	font-size: 20px;
+	color: #0091ff;
+}
+
+
+
+
+
+/*侧划导航*/
+.motaikuang{
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	opacity: 0.5;
+	z-index:999;
+	position: fixed;
+	top:0;
+	left: 0;
+	display: none;
+}
+.weforms-cehua{
+	position: fixed;
+	top:44px;
+	left:-231px;
+	background: #242834;
+	z-index: 1000;
+	height: 100%;
+	width:231px;
+	overflow: scroll;
+}
+.weforms-cehua ul{
+	width:100%;
+	
+}
+.weforms-cehua ul li{
+	width:100%;
+	height: 52px;
+	text-align: left;
+	line-height: 52px;
+	font-size: 16px;
+	color: #fff;
+	padding-left: 15px;
+	border-bottom: 1px solid #474c59;
+	word-wrap: normal;/* for IE */
+    -webkit-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.weforms-cehua ul .active{
+	background: #363c4a;
+	color: #0388eb;
+}
+.weforms-cehua-top{
+	width:100%;
+	height: 102px;
+	background: #242834;
+	padding: 24px 17px;
+}
+.weforms-cehua-top img{
+	float: left;
+	width:53px;
+	height: 53px;
+}
+.weforms-cehua-top dl{
+	float: left;
+	height: 100%;
+	padding-top:12px ;
+	padding-left: 12px;
+}
+
+.weforms-cehua-top dl a{
+	color: #888fa3;
+	font-size:16px ;
+}
+.weforms-cehua-top dl dd{
+	margin-top: 5px;
+}

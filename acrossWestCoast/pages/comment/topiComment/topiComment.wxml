@@ -1,0 +1,12 @@
+
+<form>
+  <view class='commit-top'>
+    <view class='commit-false' bindtap='navigateBack'>取消</view>
+    <view wx:if="{{weibocontent== ''}}" class='commit-true'>评论</view>
+    <button wx:else class='commit-true' style='color:#fff' bindtap='toSend'>评论</button>
+  </view>
+  <view class='commit-textarea'>
+     <textarea placeholder="评论一下...（140个汉字以内）" bindinput='BindInputTap'></textarea>
+  </view>
+</form>
+

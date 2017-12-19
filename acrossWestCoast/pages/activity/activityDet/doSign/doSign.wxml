@@ -1,0 +1,4 @@
+<view class='title'>请输入姓名和手机号码</view>
+<input placeholder="姓名" type='text' bindinput='bindname'></input>
+<input placeholder="手机号" type='number' bindinput='bindphone'></input>
+<button bindtap='submit'>提交</button>

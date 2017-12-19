@@ -1,0 +1,16 @@
+<import src="../../../template/lists.wxml" />
+
+<view class='interactDet-top'>
+  <image src='{{topic.logo}}' class='interactDet-top-back'></image>
+  <image src='../../../images/icon/icon_commit.png' class='interactDet-top-commit' bindtap='toTopic' data-id='{{topic.id}}'></image>
+</view>
+<view class='interactDet-title'>
+  <view class='interactDet-title-big'>#{{topic.name}}#</view>
+  <view class='interactDet-title-small'>{{topic.read_count}}人浏览该话题</view>
+</view>
+<block wx:if="{{total_count==0}}">
+  <view class='no-pinglun'>抢个沙发吧！！</view>
+</block>
+<block wx:else>
+  <template is="lists" data="{{lists}}" />
+</block>

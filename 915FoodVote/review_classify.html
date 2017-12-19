@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>评审分类页</title>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/mui.min.js"></script>
+    <script>
+        mui.init();
+    </script>
+</head>
+<body>
+    <div class="mui-content m-915EatQD-reviewClassify">
+        <!-- m-915EatQD-reviewClassify-content -->
+        <div class="reviewClassify-content">
+            <!-- reviewClassify-countdown -->
+            <div class="reviewClassify-countdown">
+                <h3>距离大众评审结束时间还有</h3>
+                <span class="countdown-view" data-time="1506234856"></span>
+            </div>
+            <!-- reviewClassify-countdown -->
+            <div class="reviewClassify-type">
+                <ul>
+                    <li><a href="#"><img src="img/img_fandian_class.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/img_caipin_class.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/img_person_class.png" alt=""></a></li>
+                </ul>
+            </div>
+            <!-- reviewClassify-link -->
+            <div class="reviewClassify-link">
+                <a href="#">查看专家评审</a>
+            </div>
+            <!-- reviewClassify-priceCenter -->
+            <a href="#" class="reviewClassify-priceCenter mui-clearfix mui-block">
+                <div class="left mui-pull-left">
+                    <img src="img/icon_jiangpin.png" alt="">
+                </div>
+                <div class="right mui-pull-right">
+                    <span>奖品中心</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script>
+        countdown($(".countdown-view"),{
+            'start': $('.countdown-view').attr('data-time') - "1505801693",
+            'secondOnly': false,
+            'callback': null
+        });
+    </script>
+</body>
+</html>

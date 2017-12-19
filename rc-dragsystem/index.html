@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/ydui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div class="index-content">
+			<div class="index-container">
+				<div id="advanced" class="row" style="position: relative;">
+					<div class="block__list1 col-md-4 col-lg-4">
+						<div id="advanced-1">
+							<!--手机样式-->
+							<!--头部-->
+							<div class="phone-header">
+								<div class="phone-header-left box-left">
+									<header class="index-header">
+								        <div class="index-header-position">
+								            <img src="img/position.png" alt="">
+								        </div>
+								        <div class="index-header-search">
+								            <img src="img/search.png" alt="">
+								            <input type="text">
+								        </div>
+								        <div class="index-header-time">
+								            <img src="img/history.png" alt="">
+								        </div>
+								        <div class="index-header-play">
+								            <img src="img/play.png" alt="">
+								        </div>
+								    </header>
+								</div>
+								<div class="phone-header-right box-right">
+									<img src="img/template1.png"/>
+								</div>
+								<div class="phone-header-black box-black">
+									<button>删除</button>
+								</div>
+							</div>
+
+							<!--nav-->
+							<div class="phone-nav">
+								<div class="phone-nav-left box-left">
+						        	<ul class="index-view-nav">
+							            <a href="#"><li class="active">推荐</li></a>
+							            <a href="#"><li>分类</li></a>
+							            <a href="#"><li>电台</li></a>
+							            <a href="#"><li>电视</li></a>
+							            <a href="#"><li><img src="data:image/png;base64,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" alt=""></li></a>
+							            <a href="#"><li>资讯</li></a>
+							        </ul>
+								</div>
+								<div class="phone-nav-right box-right">
+									<img src="img/template2.png"/>
+									<h2>一行2个商品</h2>
+								</div>
+								<div class="phone-nav-black box-black">
+									<button>删除</button>
+								</div>
+							</div>
+							<!--banner-->
+							
+							<div class="phone-banner">
+								<div class="phone-banner-left box-left">
+									<img src="img/lunbo.png"/>
+								</div>
+								<div class="phone-banner-right box-right">
+									<img src="img/template3.png"/>
+									<h2>一行3个商品</h2>
+								</div>
+								<div class="phone-banner-black box-black">
+									<button>删除</button>
+								</div>
+							</div>
+							<!--grids-->
+							<div class="phone-grids">
+								<div class="phone-grids-left box-left">
+									<div class="m-grids-8 index-view-grids">
+							            <a href="#" class="grids-item">
+							                <div class="grids-icon"><img src="img/icon/1.png"></div>
+							                <div class="grids-txt"><span>摇红包</span></div>
+							            </a>
+							            <a href="#" class="grids-item">
+							                <div class="grids-icon"><img src="img/icon/2.png" alt=""></div>
+							                <div class="grids-txt"><span>朋友圈</span></div>
+							            </a>
+							            <a href="#" class="grids-item">
+							                <div class="grids-icon"><img src="img/icon/3.png" alt=""></div>
+							                <div class="grids-txt"><span>玩金币</span></div>
+							            </a>
+							            <a href="#" class="grids-item">
+							                <div class="grids-icon"><img src="img/icon/4.png" alt=""></div>
+							                <div class="grids-txt"><span>生活圈</span></div>
+							            </a>
+							            <a href="#" class="grids-item grids-item-bottom">
+							                <div class="grids-icon"><img src="img/icon/5.png" alt=""></div>
+							                <div class="grids-txt"><span>社区</span></div>
+							            </a>
+							            <a href="#" class="grids-item grids-item-bottom">
+							                <div class="grids-icon"><img src="img/icon/6.png" alt=""></div>
+							                <div class="grids-txt"><span>排行榜</span></div>
+							            </a>
+							            <a href="#" class="grids-item grids-item-bottom">
+							                <div class="grids-icon"><img src="img/icon/7.png" alt=""></div>
+							                <div class="grids-txt"><span>游戏中心</span></div>
+							            </a>
+							            <a href="#" class="grids-item grids-item-bottom">
+							                <div class="grids-icon"><img src="img/icon/8.png" alt=""></div>
+							                <div class="grids-txt"><span>积分</span></div>
+							            </a>
+							        </div>
+								</div>
+								<div class="phone-grids-right box-right">
+									<img src="img/template1.png"/>
+									<h2>一行3个商品</h2>
+								</div>
+								<div class="phone-grids-black box-black">
+									<button>删除</button>
+								</div>
+							</div>
+							<!--正在直播-->
+							<div class="phone-live">
+								<div class="phone-live-left box-left">
+									<div class="index-view-lists">
+							            <div class="m-cell">
+							                <a class="cell-item" href="javascript:;">
+							                    <div class="cell-left"><span class="cell-icon"><img src="img/shutiao.png" /></span>正在直播<img src="img/play.png" alt="" class="playImg"></div>
+							                    <!--<div class="cell-right cell-arrow">图标是image</div>-->
+							                </a>
+							            </div>
+							            <div class="list-live m-list list-theme1">
+							                <a href="#" class="list-item">
+							                    <div class="list-img">
+							                        <img src="img/live/chaoji.png">
+							                        <div>
+							                            <p><i class="iconfont icon-bofang"></i>2222.4万</p>
+							                        </div>
+							                    </div>
+							                    <div class="list-mes">
+							                        <h3 class="list-title">够级英雄</h3>
+							                    </div>
+							                </a>
+							            </div>
+							            <div class="lists-shuaxin">
+							                <p>换一批</p>
+							                <img src="img/change.png" alt="">
+							            </div>
+							        </div>
+								</div>
+								<div class="phone-live-right box-right">
+									<img src="img/template3.png"/>
+									<h2>一行3个商品</h2>
+								</div>
+								<div class="phone-live-black box-black">
+									<button>删除</button>
+								</div>
+							</div>
+							<!--推荐主播-->
+							<div class="phone-person">
+								<div class="phone-person-left box-left">
+									<div class="index-view-lists">
+							            <div class="m-cell m-cell1">
+							                <a class="cell-item" href="javascript:;">
+							                    <div class="cell-left"><span class="cell-icon"><img src="img/shutiao.png" /></span>推荐主播</div>
+							                    <div class="cell-right cell-arrow">更多</div>
+							                </a>
+							            </div>
+							            <div class="swiper-container swiper-container1">
+							                <div class="swiper-wrapper">
+							                    <div class="swiper-slide">
+							                        <img src="img/recommend/zhubo.png" alt="">
+							                        <p class="p1">小路</p>
+							                        <p class="p2">制片人/主持人</p>
+							                    </div>
+							                </div>
+							            </div>
+							            <div class="lists-shuaxin">
+							                <p>换一批</p>
+							                <img src="img/change.png" alt="">
+							            </div>
+							        </div>
+								</div>
+								<div class="phone-person-right box-right">
+									<img src="img/template3.png"/>
+									<h2>一行3个商品</h2>
+								</div>
+								<div class="phone-person-black box-black">
+									<button>删除</button>
+								</div>
+							</div>
+							<!--最新活动-->
+							<div class="phone-active">
+								<div class="phone-active-left box-left">
+									<div class="index-view-lists">
+							            <div class="m-cell m-cell1">
+							                <a class="cell-item" href="javascript:;">
+							                    <div class="cell-left"><span class="cell-icon"><img src="img/shutiao.png" /></span>最新活动</div>
+							                    <div class="cell-right cell-arrow">更多</div>
+							                </a>
+							            </div>
+							            <div class="m-list list-theme4 lists-news">
+							                <a href="#" class="list-item">
+							                    <div class="list-img">
+							                        <img src="img/new/maiche.png">
+							                    </div>
+							                    <div class="list-mes">
+							                        <h3 class="list-title">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</h3>
+							                        <div class="list-mes-item">
+							                            <div>
+							                                <span class="list-price"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAUCAYAAACJfM0wAAAAAXNSR0IArs4c6QAAAfRJREFUOBGdVT1oU1EUPuf+5MdQh0InqUiMP1A7JKsgxQ6hg44WcVGDBgcXB8dC3e0klKZ2qVMRQaduunRORHEQq6KbZAjmr5G8d4/nPWl4XN4L93mznJ/v+865N4fzEPh8WSlli/MzdUC8jEAiiKU9BGgA6ODbz17j3P7hHxUIFE+f3ECi60TwhgFjQP6lOQTEcM2kx9zgebYf4u/awuyMzH72jbeqn394m0bPxo7r5WVJ+KIz6F4UijI5voJvBLVtYFrf+Njmu3paKi1AjYJrAHoq8W1H9y+ddSmCaCYaE2MaUYN+4t8rr03D2DknYSZJFLjO4k/fLUH4h9tCtu8mjMCjxM8l8NGVC+Xd3p3ynC1k+27CERZP4s18Bq9GQrFmWuEjY6imtpp7sWqRoNN7IUEWkDrGwC213dqP8BNNp455Hj/5Hl1zFQ2qOXX8qtNav/ES/MT2YhLHHQuSxovJhyFXUTKBxr8lpnpHupvPw1AJUf1++8zX4aAQjlZSkaT4icJAKCmrPJT9X22vH24xr15ZFQTPuFqPiamuHCkkeU8UDFFdNd6/nqzH0d3FotJ6AXgdRcDuJpI/NuJjfqf1w530H8hJxzZ3VKuUtKAHIFDaudA3QYe4mdtpHsblE8eN12oOUJ7iT1WsMCH4ISZOlWN/AWeBnEeiuo04AAAAAElFTkSuQmCC" alt="">FM98.7</span>
+							                                <span>2017-09-08</span>
+							                            </div>
+							                        </div>
+							                    </div>
+							                </a>
+							            </div>
+							            <div class="lists-shuaxin">
+							                <p>换一批</p>
+							                <img src="img/change.png" alt="">
+							            </div>
+							        </div>
+								</div>
+								<div class="phone-active-right box-right">
+									<img src="img/template3.png"/>
+									<h2>一行3个商品</h2>
+								</div>
+								<div class="phone-active-black box-black">
+									<button>删除</button>
+								</div>
+							</div>
+							<!--热门话题-->
+							<div class="phone-talk">
+								<div class="phone-talk-left box-left">
+									<div class="index-view-lists">
+							            <div class="m-cell m-cell1">
+							                <a class="cell-item" href="javascript:;">
+							                    <div class="cell-left"><span class="cell-icon"><img src="img/shutiao.png" /></span>热门话题</div>
+							                    <div class="cell-right cell-arrow">更多</div>
+							                </a>
+							            </div>
+							            <div class="m-list list-theme4 lists-news">
+							                <a href="#" class="list-item">
+							                    <div class="list-img">
+							                        <img src="img/hot/kaixueji.png">
+							                    </div>
+							                    <div class="list-mes">
+							                        <h3 class="list-title">标题标题标题标题标题</h3>
+							                        <div class="list-mes-item">
+							                            <div>
+							                                <span class="list-price list-price-hot"><img src="img/hot/re.png" alt="">今日09：30</span>
+							                                <span class=" list-price-hot">12万阅读</span>
+							                            </div>
+							                        </div>
+							                    </div>
+							                </a>
+							            </div>
+							        </div>
+								</div>
+								<div class="phone-talk-right box-right">
+									<img src="img/template3.png"/>
+									<h2>一行3个商品</h2>
+								</div>
+								<div class="phone-talk-black box-black">
+									<button>删除</button>
+								</div>
+							</div>
+							<!--footer-->
+							<div class="phone-footer">
+								<div class="phone-footer-left box-left">
+									<footer class="m-tabbar index-footer">
+								        <a href="#" class="tabbar-item tabbar-active">
+								            <span class="tabbar-icon tabbar-icon1">
+								                <img src="img/bottom/1.png" alt="" class="img1">
+								                <img src="img/bottom/1.1.png" alt="" class="img2">
+								                <i class="icon-shopcart-outline"></i>
+								            </span>
+								            <span class="tabbar-txt">首页</span>
+								        </a>
+								        <a href="#" class="tabbar-item">
+								            <span class="tabbar-icon">
+								                <img src="img/bottom/2.png" alt="" class="img1">
+								                <img src="img/bottom/2.2.png" alt="" class="img2">
+								                <!--<i class="icon-shopcart-outline"></i>-->
+								            </span>
+								            <span class="tabbar-txt">直播</span>
+								        </a>
+								        <a href="#" class="tabbar-item">
+								            <span class="tabbar-icon">
+								                <img src="img/bottom/5.png" alt="" class="footer-mid">
+								                <!--<i class="icon-ucenter-outline"></i>-->
+								            </span>
+								            <span class="tabbar-txt"></span>
+								        </a>
+								        <a href="#" class="tabbar-item">
+								            <span class="tabbar-icon">
+								                <img src="img/bottom/3.png" alt="" class="img1">
+								                <img src="img/bottom/3.3.png" alt="" class="img2">
+								                <!--<i class="icon-ucenter-outline"></i>-->
+								            </span>
+								            <span class="tabbar-txt">花余额</span>
+								        </a>
+								        <a href="#" class="tabbar-item">
+								            <span class="tabbar-icon">
+								                <img src="img/bottom/4.png" alt=""  class="img1">
+								                <img src="img/bottom/4.4.png" alt="" class="img2">
+								                <!--<i class="icon-ucenter-outline"></i>-->
+								            </span>
+								            <span class="tabbar-txt">个人中心</span>
+								        </a>
+								    </footer>
+								</div>
+								<div class="phone-footer-right box-right">
+									<img src="img/template3.png"/>
+									<h2>一行3个商品</h2>
+								</div>
+								<div class="phone-footer-black box-black">
+									<button>删除</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block__list3 col-md-2 col-lg-2">
+						<div class="manage-left">
+                			<div class="left-one">
+			                    <div>
+			                        <img src="img/shezhi.png" alt="" class="img1">
+			                        <p>系统配置</p>
+			                        <img src="img/jiantou.png" alt="" class="img2">
+			                    </div>
+			                    <ul>
+			                        <li class="active">
+			                        	<img src="img/listimg1.png"/>
+			                        	<p>三图片</p>
+			                        </li>
+			                        <li>
+			                        	<img src="img/listimg7.png"/>
+			                        	<p>文章图标</p>
+			                        </li>
+			                        <li>
+			                        	<img src="img/listimg2.png"/>
+			                        	<p>标签商品</p>
+			                        </li>
+			                        <li>
+			                        	<img src="img/listimg6.png"/>
+			                        	<p>商品列表</p>
+			                        </li>
+			                        <li>
+			                        	<img src="img/listimg2.png"/>
+			                        	<p>季度推荐</p>
+			                        </li>
+			                        <li>
+			                        	<img src="img/listimg3.png"/>
+			                        	<p>当季推荐</p>
+			                        </li>
+			                        <li>
+			                        	<img src="img/listimg4.png"/>
+			                        	<p>中部轮播广告</p>
+			                        </li>
+			                        <li>
+			                        	<img src="img/listimg5.png"/>
+			                        	
+			                        </li>
+			                        
+			                    </ul>
+			                </div>    
+			            </div>
+					</div>
+					<div class="block__list2 col-md-6 col-lg-6">
+						<div class="fix-text">
+							展示方式:
+						</div>
+						<div class="block__list2-box-1 active">
+							<div id="advanced-2" class="block-box-left">
+								<!--手机样式-->
+								<div class="phone-header">
+									<div class="phone-header-left box-left">
+										<header class="index-header">
+									        <div class="index-header-position">
+									            <img src="img/position.png" alt="">
+									        </div>
+									        <div class="index-header-search">
+									            <img src="img/search.png" alt="">
+									            <input type="text">
+									        </div>
+									        <div class="index-header-time">
+									            <img src="img/history.png" alt="">
+									        </div>
+									        <div class="index-header-play">
+									            <img src="img/play.png" alt="">
+									        </div>
+									    </header>
+									</div>
+									<div class="phone-header-right box-right">
+										<img src="img/template1.png"/>
+										<h2>头部</h2>
+									</div>
+									<div class="phone-header-black box-black">
+										<button>删除</button>
+									</div>
+								</div>
+								<!--nav-->
+								<div class="phone-nav">
+									<div class="phone-nav-left box-left">
+							        	<ul class="index-view-nav">
+								            <a href="#"><li class="active">推荐</li></a>
+								            <a href="#"><li>分类</li></a>
+								            <a href="#"><li>电台</li></a>
+								            <a href="#"><li>电视</li></a>
+								            <a href="#"><li><img src="data:image/png;base64,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" alt=""></li></a>
+								            <a href="#"><li>资讯</li></a>
+								        </ul>
+									</div>
+									<div class="phone-nav-right box-right">
+										<img src="img/template2.png"/>
+										<h2>导航</h2>
+									</div>
+									<div class="phone-nav-black box-black">
+										<button>删除</button>
+									</div>
+								</div>
+								<!--banner-->
+								
+								<div class="phone-banner">
+									<div class="phone-banner-left box-left">
+										<img src="img/lunbo.png"/>
+									</div>
+									<div class="phone-banner-right box-right">
+										<img src="img/template3.png"/>
+										<h2>轮播</h2>
+									</div>
+									<div class="phone-banner-black box-black">
+										<button>删除</button>
+									</div>
+								</div>
+								<!--grids-->
+							<div class="phone-grids">
+								<div class="phone-grids-left box-left">
+									<div class="m-grids-8 index-view-grids">
+							            <a href="#" class="grids-item">
+							                <div class="grids-icon"><img src="img/icon/1.png"></div>
+							                <div class="grids-txt"><span>摇红包</span></div>
+							            </a>
+							            <a href="#" class="grids-item">
+							                <div class="grids-icon"><img src="img/icon/2.png" alt=""></div>
+							                <div class="grids-txt"><span>朋友圈</span></div>
+							            </a>
+							            <a href="#" class="grids-item">
+							                <div class="grids-icon"><img src="img/icon/3.png" alt=""></div>
+							                <div class="grids-txt"><span>玩金币</span></div>
+							            </a>
+							            <a href="#" class="grids-item">
+							                <div class="grids-icon"><img src="img/icon/4.png" alt=""></div>
+							                <div class="grids-txt"><span>生活圈</span></div>
+							            </a>
+							            <a href="#" class="grids-item grids-item-bottom">
+							                <div class="grids-icon"><img src="img/icon/5.png" alt=""></div>
+							                <div class="grids-txt"><span>社区</span></div>
+							            </a>
+							            <a href="#" class="grids-item grids-item-bottom">
+							                <div class="grids-icon"><img src="img/icon/6.png" alt=""></div>
+							                <div class="grids-txt"><span>排行榜</span></div>
+							            </a>
+							            <a href="#" class="grids-item grids-item-bottom">
+							                <div class="grids-icon"><img src="img/icon/7.png" alt=""></div>
+							                <div class="grids-txt"><span>游戏中心</span></div>
+							            </a>
+							            <a href="#" class="grids-item grids-item-bottom">
+							                <div class="grids-icon"><img src="img/icon/8.png" alt=""></div>
+							                <div class="grids-txt"><span>积分</span></div>
+							            </a>
+							        </div>
+								</div>
+								<div class="phone-grids-right box-right">
+									<img src="img/template1.png"/>
+									<h2>grids</h2>
+								</div>
+								<div class="phone-grids-black box-black">
+									<button>删除</button>
+								</div>
+							</div>
+							<!--正在直播-->
+							<div class="phone-live">
+								<div class="phone-live-left box-left">
+									<div class="index-view-lists">
+							            <div class="m-cell">
+							                <a class="cell-item" href="javascript:;">
+							                    <div class="cell-left"><span class="cell-icon"><img src="img/shutiao.png" /></span>正在直播<img src="img/play.png" alt="" class="playImg"></div>
+							                    <!--<div class="cell-right cell-arrow">图标是image</div>-->
+							                </a>
+							            </div>
+							            <div class="list-live m-list list-theme1">
+							                <a href="#" class="list-item">
+							                    <div class="list-img">
+							                        <img src="img/live/chaoji.png">
+							                        <div>
+							                            <p><i class="iconfont icon-bofang"></i>2222.4万</p>
+							                        </div>
+							                    </div>
+							                    <div class="list-mes">
+							                        <h3 class="list-title">够级英雄</h3>
+							                    </div>
+							                </a>
+							            </div>
+							            <div class="lists-shuaxin">
+							                <p>换一批</p>
+							                <img src="img/change.png" alt="">
+							            </div>
+							        </div>
+								</div>
+								<div class="phone-live-right box-right">
+									<img src="img/template3.png"/>
+									<h2>正在直播</h2>
+								</div>
+								<div class="phone-live-black box-black">
+									<button>删除</button>
+								</div>
+							</div>
+							<!--推荐主播-->
+							<div class="phone-person">
+								<div class="phone-person-left box-left">
+									<div class="index-view-lists">
+							            <div class="m-cell m-cell1">
+							                <a class="cell-item" href="javascript:;">
+							                    <div class="cell-left"><span class="cell-icon"><img src="img/shutiao.png" /></span>推荐主播</div>
+							                    <div class="cell-right cell-arrow">更多</div>
+							                </a>
+							            </div>
+							            <div class="swiper-container swiper-container1">
+							                <div class="swiper-wrapper">
+							                    <div class="swiper-slide">
+							                        <img src="img/recommend/zhubo.png" alt="">
+							                        <p class="p1">小路</p>
+							                        <p class="p2">制片人/主持人</p>
+							                    </div>
+							                </div>
+							            </div>
+							            <div class="lists-shuaxin">
+							                <p>换一批</p>
+							                <img src="img/change.png" alt="">
+							            </div>
+							        </div>
+								</div>
+								<div class="phone-person-right box-right">
+									<img src="img/template3.png"/>
+									<h2>推荐主播</h2>
+								</div>
+								<div class="phone-person-black box-black">
+									<button>删除</button>
+								</div>
+							</div>
+							<!--最新活动-->
+							<div class="phone-active">
+								<div class="phone-active-left box-left">
+									<div class="index-view-lists">
+							            <div class="m-cell m-cell1">
+							                <a class="cell-item" href="javascript:;">
+							                    <div class="cell-left"><span class="cell-icon"><img src="img/shutiao.png" /></span>最新活动</div>
+							                    <div class="cell-right cell-arrow">更多</div>
+							                </a>
+							            </div>
+							            <div class="m-list list-theme4 lists-news">
+							                <a href="#" class="list-item">
+							                    <div class="list-img">
+							                        <img src="img/new/maiche.png">
+							                    </div>
+							                    <div class="list-mes">
+							                        <h3 class="list-title">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</h3>
+							                        <div class="list-mes-item">
+							                            <div>
+							                                <span class="list-price"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAUCAYAAACJfM0wAAAAAXNSR0IArs4c6QAAAfRJREFUOBGdVT1oU1EUPuf+5MdQh0InqUiMP1A7JKsgxQ6hg44WcVGDBgcXB8dC3e0klKZ2qVMRQaduunRORHEQq6KbZAjmr5G8d4/nPWl4XN4L93mznJ/v+865N4fzEPh8WSlli/MzdUC8jEAiiKU9BGgA6ODbz17j3P7hHxUIFE+f3ECi60TwhgFjQP6lOQTEcM2kx9zgebYf4u/awuyMzH72jbeqn394m0bPxo7r5WVJ+KIz6F4UijI5voJvBLVtYFrf+Njmu3paKi1AjYJrAHoq8W1H9y+ddSmCaCYaE2MaUYN+4t8rr03D2DknYSZJFLjO4k/fLUH4h9tCtu8mjMCjxM8l8NGVC+Xd3p3ynC1k+27CERZP4s18Bq9GQrFmWuEjY6imtpp7sWqRoNN7IUEWkDrGwC213dqP8BNNp455Hj/5Hl1zFQ2qOXX8qtNav/ES/MT2YhLHHQuSxovJhyFXUTKBxr8lpnpHupvPw1AJUf1++8zX4aAQjlZSkaT4icJAKCmrPJT9X22vH24xr15ZFQTPuFqPiamuHCkkeU8UDFFdNd6/nqzH0d3FotJ6AXgdRcDuJpI/NuJjfqf1w530H8hJxzZ3VKuUtKAHIFDaudA3QYe4mdtpHsblE8eN12oOUJ7iT1WsMCH4ISZOlWN/AWeBnEeiuo04AAAAAElFTkSuQmCC" alt="">FM98.7</span>
+							                                <span>2017-09-08</span>
+							                            </div>
+							                        </div>
+							                    </div>
+							                </a>
+							            </div>
+							            <div class="lists-shuaxin">
+							                <p>换一批</p>
+							                <img src="img/change.png" alt="">
+							            </div>
+							        </div>
+								</div>
+								<div class="phone-active-right box-right">
+									<img src="img/template3.png"/>
+									<h2>最新活动</h2>
+								</div>
+								<div class="phone-active-black box-black">
+									<button>删除</button>
+								</div>
+							</div>
+							<!--热门话题-->
+							<div class="phone-talk">
+								<div class="phone-talk-left box-left">
+									<div class="index-view-lists">
+							            <div class="m-cell m-cell1">
+							                <a class="cell-item" href="javascript:;">
+							                    <div class="cell-left"><span class="cell-icon"><img src="img/shutiao.png" /></span>热门话题</div>
+							                    <div class="cell-right cell-arrow">更多</div>
+							                </a>
+							            </div>
+							            <div class="m-list list-theme4 lists-news">
+							                <a href="#" class="list-item">
+							                    <div class="list-img">
+							                        <img src="img/hot/kaixueji.png">
+							                    </div>
+							                    <div class="list-mes">
+							                        <h3 class="list-title">标题标题标题标题标题</h3>
+							                        <div class="list-mes-item">
+							                            <div>
+							                                <span class="list-price list-price-hot"><img src="img/hot/re.png" alt="">今日09：30</span>
+							                                <span class=" list-price-hot">12万阅读</span>
+							                            </div>
+							                        </div>
+							                    </div>
+							                </a>
+							            </div>
+							        </div>
+								</div>
+								<div class="phone-talk-right box-right">
+									<img src="img/template3.png"/>
+									<h2>热门话题</h2>
+								</div>
+								<div class="phone-talk-black box-black">
+									<button>删除</button>
+								</div>
+							</div>
+							<!--footer-->
+							<div class="phone-footer">
+								<div class="phone-footer-left box-left">
+									<footer class="m-tabbar index-footer">
+								        <a href="#" class="tabbar-item tabbar-active">
+								            <span class="tabbar-icon tabbar-icon1">
+								                <img src="img/bottom/1.png" alt="" class="img1">
+								                <img src="img/bottom/1.1.png" alt="" class="img2">
+								                <i class="icon-shopcart-outline"></i>
+								            </span>
+								            <span class="tabbar-txt">首页</span>
+								        </a>
+								        <a href="#" class="tabbar-item">
+								            <span class="tabbar-icon">
+								                <img src="img/bottom/2.png" alt="" class="img1">
+								                <img src="img/bottom/2.2.png" alt="" class="img2">
+								                <!--<i class="icon-shopcart-outline"></i>-->
+								            </span>
+								            <span class="tabbar-txt">直播</span>
+								        </a>
+								        <a href="#" class="tabbar-item">
+								            <span class="tabbar-icon">
+								                <img src="img/bottom/5.png" alt="" class="footer-mid">
+								                <!--<i class="icon-ucenter-outline"></i>-->
+								            </span>
+								            <span class="tabbar-txt"></span>
+								        </a>
+								        <a href="#" class="tabbar-item">
+								            <span class="tabbar-icon">
+								                <img src="img/bottom/3.png" alt="" class="img1">
+								                <img src="img/bottom/3.3.png" alt="" class="img2">
+								                <!--<i class="icon-ucenter-outline"></i>-->
+								            </span>
+								            <span class="tabbar-txt">花余额</span>
+								        </a>
+								        <a href="#" class="tabbar-item">
+								            <span class="tabbar-icon">
+								                <img src="img/bottom/4.png" alt=""  class="img1">
+								                <img src="img/bottom/4.4.png" alt="" class="img2">
+								                <!--<i class="icon-ucenter-outline"></i>-->
+								            </span>
+								            <span class="tabbar-txt">个人中心</span>
+								        </a>
+								    </footer>
+								</div>
+								<div class="phone-footer-right box-right">
+									<img src="img/template3.png"/>
+									<h2>底部</h2>
+								</div>
+								<div class="phone-footer-black box-black">
+									<button>删除</button>
+								</div>
+							</div>
+							</div>
+							<div class="block-box-right">
+								<!--功能样式-->
+								<h2>当季推荐</h2>
+								<div class="inputbox">
+									<span>图片地址</span><p>选择图片</p>
+									<input type="file"/>
+								</div>
+								<h3>已选择商品</h3>
+								<input type="button" name="" id="" value="选择商品" class="chosebtn"/>
+								<input type="button" name="" id="" value="添加" class="addbtn"/>
+							</div>
+						</div>
+						<div class="block__list2-box-1">
+							<div id="advanced-3" class="block-box-left">
+								<!--手机样式-->
+								<div class="phone-header">
+									<div class="phone-header-left box-left">
+										<header class="index-header">
+									        <div class="index-header-position">
+									            <img src="img/position.png" alt="">
+									        </div>
+									        <div class="index-header-search">
+									            <img src="img/search.png" alt="">
+									            <input type="text">
+									        </div>
+									        <div class="index-header-time">
+									            <img src="img/history.png" alt="">
+									        </div>
+									        <div class="index-header-play">
+									            <img src="img/play.png" alt="">
+									        </div>
+									    </header>
+									</div>
+									<div class="phone-header-right box-right">
+										<img src="img/template1.png"/>
+										<h2>一行1个商品</h2>
+									</div>
+									<div class="phone-header-black box-black">
+										<button>删除</button>
+									</div>
+								</div>
+								<!--nav-->
+								<div class="phone-nav">
+									<div class="phone-nav-left box-left">
+							        	<ul class="index-view-nav">
+								            <a href="#"><li class="active">推荐</li></a>
+								            <a href="#"><li>分类</li></a>
+								            <a href="#"><li>电台</li></a>
+								            <a href="#"><li>电视</li></a>
+								            <a href="#"><li><img src="data:image/png;base64,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" alt=""></li></a>
+								            <a href="#"><li>资讯</li></a>
+								        </ul>
+									</div>
+									<div class="phone-nav-right box-right">
+										<img src="img/template2.png"/>
+										<h2>一行2个商品</h2>
+									</div>
+									<div class="phone-nav-black box-black">
+										<button>删除</button>
+									</div>
+								</div>
+								
+								
+								
+							</div>
+							<div class="block-box-right">
+								<!--功能样式-->
+							</div>
+						</div>
+						<div class="block__list2-box-1">
+							<div id="advanced-4" class="block-box-left">
+								<!--手机样式-->
+								<div class="phone-header">
+									<div class="phone-header-left box-left">
+										<header class="index-header">
+									        <div class="index-header-position">
+									            <img src="img/position.png" alt="">
+									        </div>
+									        <div class="index-header-search">
+									            <img src="img/search.png" alt="">
+									            <input type="text">
+									        </div>
+									        <div class="index-header-time">
+									            <img src="img/history.png" alt="">
+									        </div>
+									        <div class="index-header-play">
+									            <img src="img/play.png" alt="">
+									        </div>
+									    </header>
+									</div>
+									<div class="phone-header-right box-right">
+										<img src="img/template1.png"/>
+										<h2>一行1个商品</h2>
+									</div>
+									<div class="phone-header-black box-black">
+										<button>删除</button>
+									</div>
+								</div>
+								<!--nav-->
+								<div class="phone-nav">
+									<div class="phone-nav-left box-left">
+							        	<ul class="index-view-nav">
+								            <a href="#"><li class="active">推荐</li></a>
+								            <a href="#"><li>分类</li></a>
+								            <a href="#"><li>电台</li></a>
+								            <a href="#"><li>电视</li></a>
+								            <a href="#"><li><img src="data:image/png;base64,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" alt=""></li></a>
+								            <a href="#"><li>资讯</li></a>
+								        </ul>
+									</div>
+									<div class="phone-nav-right box-right">
+										<img src="img/template2.png"/>
+										<h2>一行2个商品</h2>
+									</div>
+									<div class="phone-nav-black box-black">
+										<button>删除2</button>
+									</div>
+								</div>
+								
+								
+								
+							</div>
+							<div class="block-box-right">
+								<!--功能样式-->
+							</div>
+						</div>
+					</div>
+					<input type="button" value="保存" class="block__list4 col-md-8 col-lg-8">
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>	
+	<script src="js/Sortable.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" >
+		//关于拖拽
+		(function () {
+			'use strict';
+			var byId = function (id) { return document.getElementById(id); };
+			// Advanced groups
+			[{
+				name: 'advanced',
+				pull: true,
+				put: true
+				
+			},
+			{
+				name: 'advanced',
+				pull: 'clone',
+				put: false
+			},
+			{
+				name: 'advanced',
+				pull: 'clone',
+				put: false
+			},
+			{ 
+				name: 'advanced',
+				pull: 'clone',
+				put: false
+			}].forEach(function (groupOpts, i) {
+				Sortable.create(byId('advanced-' + (i + 1)), {
+					sort:true,
+					group: groupOpts,
+					animation: 150
+				});
+			});
+//			点击删除
+			$(".box-black").find("button").on("click",function(){
+				$(this).parent().parent().remove()
+			})
+			//控制中间显示隐藏
+			var str=1;
+			$(".left-one div").click(function(){
+	            $(this).parent().find('ul').animate({
+	            height:'toggle'
+	            });
+	            console.log($(this).parent().find('ul').height())
+	            if(str!=1){
+	                $('.img2').css('transform','rotate(360deg)')
+	                str=1;
+	            }else{
+	                $('.img2').css('transform','rotate(90deg)')
+	                str=2;
+	            }
+	        });
+	        //active切换
+	        $('.left-one ul li').on('click',function(){
+	            $('.left-one ul li').removeClass('active')
+	            $(this).addClass('active')
+	            $(".left-one ul").find("li").each(function(index,item){
+				 	if($(item).hasClass("active")){
+					 	console.log(index)
+					 	 $(".block__list2-box-1").eq(index-1).addClass('active').siblings().removeClass('active');
+					 }
+				})
+	            
+	        })
+	         //点击先择图片显示路径
+	         $(".inputbox").find("input").on("change",function(){
+	         	$(".inputbox").find("span").text($(this).val())
+	         })
+		})();
+	</script>
+	
+</html>

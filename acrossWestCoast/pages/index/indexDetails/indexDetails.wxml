@@ -1,0 +1,97 @@
+<import src="../../../wxParser/index.wxml" />
+<!-- 详情标题 -->
+<view class='indexDet-img-one'>
+  <image src='{{info.cover}}'></image>
+</view>
+<view class='indexDet-text'>
+  <view class='indexDet-title'>{{info.title}}</view>
+  <view class='indexDet-futitle'>
+    <view class='indexDet-futitle-date'>{{info.create_time}}</view>
+    <view class='indexDet-futitle-look'>{{info.view}}
+      <text>浏览</text> · {{info.comment}}
+      <text>回复</text>
+    </view>
+    <view class='indexDet-futitle-share'>{{forward}}
+      <text>分享</text>
+    </view>
+  </view>
+ <!-- 富文本 -->
+  <view class='indexDet-comment'>
+    <view class="wxParser">
+      <template is="wxParser" data="{{wxParserData:richText.nodes}}" />
+    </view>
+  </view>
+<!-- 点评 -->
+  <view class='del-remark'>
+    <view class='del-remark-title'>—— 用户点评 ——</view>
+    <block wx:if="{{comment.total_count==0}}">
+      <view class='no-pinglun'>暂无评论</view>
+    </block>
+    <block wx:else>
+      <block wx:for="{{lists}}" wx:key="{{index}}">
+        <view wx:if="{{lists[index]==''}}"></view>
+        <view wx:else class='del-remark-content'>
+          <view class='del-remark-con-img'>
+            <image src='{{item.user.avatar32}}'></image>
+          </view>
+          <view class='del-remark-con-right'>
+            <view class='remark-right-name'>{{item.user.nickname}}</view>
+            <view class='remark-right-content'>{{item.content}}</view>
+            <view class='remark-right-bot'>
+              <view class='remark-right-bot-time'>{{item.create_time}}</view>
+              <view class='remark-right-bot-shanchu' wx:if="{{uid == item.uid}}" bindtap='deleteComment' data-id="{{item.id}}" id="{{index}}">删除</view>
+              <view class='remark-right-bot-shanchu' wx:else></view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </block>
+  </view>
+</view>
+<!-- 底部 -->
+<view class='indexDet-footer'>
+  <view class='indexDet-footte-list' bindtap='doSupport' data-id='{{info.id}}'>
+    <view class='indexDet-footte-list-cion'>
+      <block wx:if="{{is_support}}">
+        <image src='../../../images/icon/icon_zan_active.png'></image>
+      </block>
+      <block wx:else>
+        <image src='../../../images/icon/indexDet-1@2x.png'></image>
+      </block>
+    </view>
+    <block wx:if="{{is_support}}">
+      <view style='color:#00b0ec'>{{suppore_count}}</view>
+    </block>
+    <block wx:else>
+      <view>{{suppore_count}}</view>
+    </block>
+  </view>
+  <view class='indexDet-footte-list' data-id='{{info.id}}' bindtap='pinglun'>
+    <view class='indexDet-footte-list-cion'>
+      <image src='../../../images/icon/indexDet-2@2x.png'></image>
+    </view>
+    <view>{{info.comment}}</view>
+  </view>
+  <view class='indexDet-footte-list' bindtap='doCollection' data-id='{{info.id}}'>
+    <view class='indexDet-footte-list-cion'>
+      <block wx:if="{{is_collection}}">
+        <image src='../../../images/icon/icon_my4.png'></image>
+      </block>
+      <block wx:else>
+        <image src='../../../images/icon/indexDet-3@2x.png'></image>
+      </block>
+    </view>
+    <block wx:if="{{is_collection}}">
+      <view style='color: #00b0ec'>已收藏</view>
+    </block>
+    <block wx:else>
+      <view>收藏</view>
+    </block>
+  </view>
+  <button class='indexDet-footte-list' data-id='{{info.id}}' open-type="share">
+    <view class='indexDet-footte-list-cion'>
+      <image src='../../../images/icon/indexDet-4@2x.png'></image>
+    </view>
+    <view>{{forward}}</view>
+  </button>
+</view>

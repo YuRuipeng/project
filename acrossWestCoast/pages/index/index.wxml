@@ -1,0 +1,30 @@
+<!-- <import src="../../template/lists" /> -->
+<!-- 分类 -->
+<view class="swiper-tab">
+  <block wx:for="{{tree}}" wx:for-index="idx" wx:key="{{idx}}">
+    <view class='swiper-tab-lists'>
+      <text class="swiper-tab-list {{currentTab==idx ? 'on' : ''}}" data-current="{{idx}}" bindtap="swichNav" id='{{idx}}' data-c="{{item.id}}">{{item.title}}</text>
+    </view>
+  </block>
+</view>
+<!-- 列表 -->
+<view class="swiper-box">
+  <view style="position:absolute;width:100%;height:100%;background:#fff">
+    <scroll-view class='swiper-item-one' scroll-y="true" bindscrolltolower="scrolltolower">
+      <block wx:if="{{totalCount==0}}">
+        <view class='no-pinglun'>暂无资讯</view>
+      </block>
+      <block wx:else>
+        <view class='swiper-img' data-id='{{item.id}}' bindtap='detail' wx:for="{{lists}}" wx:key="{{idx}}">
+          <image src="{{item.cover}}" class='back-img'></image>
+          <view class='index-news-text'>
+            <view class='view1'>{{item.title}}</view>
+            <image src="../../images/icon/icon_fang@2x.png" class='icon'></image>
+            <view class='view2'>{{item.description}}</view>
+          </view>
+        </view>
+      </block>
+      <!-- <template is="isHideLoadMore" data="{{isHideLoadMore}}"/> -->
+    </scroll-view>
+  </view>
+</view>

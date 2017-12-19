@@ -1,0 +1,47 @@
+page{
+  background: #eee;
+}
+.commit-top{
+  width: 100%;
+  height: 86rpx;
+  background: #00b0ec;
+}
+.commit-top view{
+  width: 104rpx;
+  height: 86rpx;
+  line-height: 86rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+.commit-false{
+  float: left;
+  color: #fff;
+}
+.commit-true{
+  float: right;
+  color: #a3daf6;
+  outline: none;
+  background: #00b0ec;
+  height: 86rpx;
+  font-size: 30rpx;
+}
+.commit-true::after{
+  border: 0
+}
+.commit-textarea{
+  background: #fff;
+  width: 100%;
+  height: 328rpx;
+  padding-top: 10rpx;
+}
+textarea{
+  background: #fff;
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+}
+.addImg{
+  width: 61rpx;
+  height: 49rpx;
+  margin:30rpx 0 0 30rpx;
+}

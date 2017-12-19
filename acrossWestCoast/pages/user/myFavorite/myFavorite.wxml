@@ -1,0 +1,34 @@
+<!-- <view class="swiper-tab">  
+  <block wx:for="{{arr}}" wx:for-index="idx" wx:key="{{idx}}">
+    <view class='swiper-tab-lists'>
+      <text class="swiper-tab-list {{currentTab==idx ? 'on' : ''}}" data-current="{{idx}}" bindtap="swichNav" id='{{idx}}'>{{item.title}}</text>
+    </view>  
+  </block>
+</view>  
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 40}}px" bindchange="bindChange">  
+    <swiper-item>
+      <view class='myFavorite-swiper-item-list'>
+        <block wx:for="{{array}}" wx:key="{{index}}">
+          <navigator>
+            <view class='myFavorite-swiper-item-list-contant'>
+              <view class='list-contant-img'>
+                <image src='{{item.imgs}}' mode='aspectFit'></image>
+              </view>
+              <view class='list-contant-title'>{{item.title}}</view>
+            </view>
+          </navigator>
+        </block>
+      </view>
+    </swiper-item>   
+</swiper>   -->
+<block wx:if="{{totalCount==0}}">
+  <view class='no-pinglun'>看看有什么喜欢的</view>
+</block>
+<block wx:else>
+  <block wx:for="{{lists}}" wx:key="{{index}}">
+    <view class='myFavorite' bindtap='toNewsDel' data-id="{{item.id}}">
+      <view class='myFavorite-title'>{{item.title}}</view>
+      <view class='myFavorite-time'>{{item.create_time}}</view>
+    </view>
+  </block>
+</block>

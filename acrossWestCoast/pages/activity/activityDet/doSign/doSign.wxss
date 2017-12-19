@@ -1,0 +1,31 @@
+input{
+  width: 80%;
+  height: 92rpx;
+  border: 2rpx solid #eee;
+  border-radius: 10rpx;
+  margin: 20rpx auto;
+  padding-left: 20rpx;
+  font-size: 30rpx;
+}
+button{
+  width: 50%;
+  height: 92rpx;
+  color: #fff;
+  background: #00b0ec;
+  border-radius: 10rpx;
+  margin: 20rpx auto;
+  text-align: center;
+  line-height: 92rpx;
+  outline: none;
+  border: 0;
+  font-size: 30rpx;
+}
+.title{
+  width: 100%;
+  height: 92rpx;
+  color: #333;
+  margin: 20rpx auto;
+  text-align: center;
+  line-height: 92rpx;
+  font-size: 30rpx;
+}

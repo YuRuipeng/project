@@ -1,0 +1,55 @@
+
+html,body{
+	height: 100%;
+}
+
+
+
+
+
+.show-video-box{
+	width:100%;
+	height: 100%;
+	padding-bottom: 49px;
+}
+.show-video-box img{
+	width:100%;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+/*底部*/
+	.show-video-footer{
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		height: 49px;
+		background: #fff;
+		padding-top: 4%;
+	}
+	.show-video-footer ul li{
+		float: left;
+		width:50%;
+		
+		text-align: center;
+		
+		
+	}
+	.show-video-footer ul li:first-child{
+		border-right: 1px solid #000;
+	}
+	.show-video-footer ul li i{
+		color: #f49805;
+		font-size: 15px;
+		margin-right: 4px;
+	}
+	.show-video-footer ul li a{
+		font-size: 15px;
+	}

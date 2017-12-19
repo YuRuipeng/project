@@ -1,0 +1,11 @@
+<block wx:if="{{all_count==0}}">
+  <view class='no-pinglun'>暂无参加用户</view>
+</block>
+<block wx:else>
+  <view class='memberList'  wx:for="{{menber}}" wx:key="{{index}}">
+    <view class='memberList-image'>
+      <image src='{{item.member.avatar32}}'></image>
+    </view>
+    <view class='memberList-name'>{{item.name}}</view>
+  </view>
+</block>

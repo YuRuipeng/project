@@ -1,0 +1,225 @@
+page{
+  background: #f9f9f9;
+  width: 100%;
+  height: 100%;
+}
+.interact{
+  width: 100%;
+  height: 100%;
+}
+.interacts-top{
+  width: 100%;
+  height: 128rpx;
+  position: relative;
+}
+.interacts-top-title{
+  width: 90%;
+  height: 100%;
+  line-height: 128rpx;
+  padding-left: 20rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.interacts-top-img{
+  width: 50rpx;
+  height: 8rpx;
+  position: absolute;
+  bottom: 30rpx;
+  left: 30rpx;
+}
+.interacts-swiper{
+  width: 100%;
+  height: 442rpx;
+  white-space: nowrap;
+}
+.interacts-swiper-list{
+  width: 265rpx;
+  height: 340rpx;
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+  display: inline-block;
+}
+.interacts-swiper-list image{
+  width: 265rpx;
+  height: 265rpx;
+}
+.interacts-swiper-list view{
+  width: 265rpx;
+  height: 75rpx;
+  text-align: center;
+  line-height: 75rpx;
+  color: #666666;
+  font-size: 24rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.interacts-comment{
+  width: 100%;
+  height: auto;
+  background: #fff;
+  min-height: 280rpx;
+  border-bottom: 2rpx solid #eee;
+  padding-bottom:20rpx;
+  float:left;
+}
+.headImg{
+  width: 14.5%;
+  min-height: 260rpx;
+  height: auto;
+  float: left;
+}
+.headImg image{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  margin-top: 45rpx;
+  margin-left: 22rpx;
+}
+.comment{
+  width: 85.5%;
+  height: auto;
+  float: left;
+}
+.userName{
+  width: 100%;
+  height: 104rpx;
+  line-height: 130rpx;
+  font-size: 30rpx;
+  color: #999;
+}
+.userName text{
+  float: right;
+  font-size: 24rpx;
+  margin-right: 56rpx;
+}
+.contant{
+  width: 90%;
+  height: auto;
+  font-size: 24rpx;
+  color: #333;
+  line-height: 35rpx;
+  word-wrap: break-word;
+}
+.result{
+  width: 100%;
+  height: 65rpx;
+}
+.result-time{
+  width: 60%;
+  line-height: 105rpx;
+  font-size: 24rpx;
+  color: #999;
+  float: left;
+}
+.result-zan{
+  float: right;
+  margin-right: 10rpx;
+}
+.result-zan image{
+  width: 39rpx;
+  height: 39rpx;
+  float: left;
+  margin-top: 30rpx;
+  margin-right: 50rpx;
+}
+.result-zan view{
+  float: right;
+  min-width: 56rpx;
+  padding-left: 10rpx;
+  font-size: 24rpx;
+  color: #999;
+  height: 65rpx;
+  line-height: 105rpx
+}
+.zandata{
+  width: 80.5%;
+  background: #f9f9f9;
+  float: right;
+  margin-top: 20rpx;
+  padding-left: 20rpx;
+  margin-right: 20rpx;
+  padding-right:10rpx;
+}
+.zandata-zan{
+  width: 100%;
+}
+.zandata-zan image{
+  width: 45rpx;
+  height: 45rpx;
+  float: left;
+  margin-top:10rpx;
+  margin-right:10rpx;
+}
+.zandata-zan view{
+  color: #00b0ec;
+  font-size: 24rpx;
+  height: 72rpx;
+  float: left;
+  line-height: 72rpx;
+  margin-right:5rpx;
+}
+.zandata-pinglun{
+  width: 100%;
+}
+.zandata-pinglun view{
+  width: 100%;
+  font-size: 24rpx;
+  color: #333;
+  float: left;
+  word-wrap: break-word;
+}
+.zandata-pinglun-content{
+  font-size: 24rpx;
+  color: #333;
+   float: left; 
+  word-wrap: break-word;
+}
+.zandata-pinglun-nickname{
+  font-size: 24rpx;
+   float: left; 
+  word-wrap: break-word;
+  color: #00b0ec;
+  margin-right: 10rpx;
+}
+ .zandata-pinglun-maohao{
+  float: left;
+} 
+.doTopic{
+  display: inline-block;
+}
+.images{
+  width: 85.5%;
+  float: left;
+  margin-top: 20rpx;
+}
+.images image{
+  max-width: 150rpx;
+  max-height: 150rpx;
+  margin-right: 20rpx;
+  float: left;
+  margin-bottom:20rpx;
+}
+.addweibo{
+  width: 92rpx;
+  height: 92rpx;
+  border-radius: 50%;
+  position: fixed;
+  right: 40rpx;
+  bottom: 50rpx;
+}
+.no-pinglun{
+  width: 100%;
+  height: 92rpx;
+  line-height: 92rpx;
+  text-align: center;
+  font-size: 35rpx;
+  color: #999;
+}
+.zanDou{
+  color: #00b0ec;
+}
+.zanDou:last-child{
+  color: #f9f9f9
+}
+

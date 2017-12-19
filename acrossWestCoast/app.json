@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/user/user",
+    "pages/index/index",
+    "pages/index/indexDetails/indexDetails",
+    "pages/interact/interact",
+    "pages/interact/interactDet/interactDet",
+    "pages/activity/activity",
+    "pages/activity/activityDet/activityDet",
+    "pages/activity/activityDet/doSign/doSign",
+    "pages/activity/activityDet/memberList/memberList",
+    "pages/user/myFavorite/myFavorite",
+    "pages/user/myInteractive/myInteractive",
+    "pages/user/myActivity/myActivity",
+    "pages/comment/topiComment/topiComment",
+    "pages/comment/topic/topic",
+    "pages/comment/commit/commit",
+    "pages/comment/addWeibo/addWeibo",
+    "pages/comment/newsComment/newsComment",
+    "pages/comment/intComment/intComment"
+  ],
+  "window":{
+    "navigationBarBackgroundColor":"#ffffff"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#00b0ec",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icon/icon_home.png",
+        "selectedIconPath": "images/icon/icon_home_active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/interact/interact",
+        "iconPath": "images/icon/icon_hudong.png",
+        "selectedIconPath": "images/icon/icon_hudong_active.png",
+        "text": "互动"
+      },
+      {
+        "pagePath": "pages/activity/activity",
+        "iconPath": "images/icon/icon_huodong.png",
+        "selectedIconPath": "images/icon/icon_huodong_active.png",
+        "text": "活动"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "images/icon/icon_user.png",
+        "selectedIconPath": "images/icon/icon_user_active.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

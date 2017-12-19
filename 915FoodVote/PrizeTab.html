@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>奖品中心</title>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/mui.min.js"></script>
+    <script>
+        mui.init();
+    </script>
+</head>
+<body>
+    <div class="mui-content">
+        <!-- m-915EatQD-PrizeTab-content -->
+        <div class="m-915EatQD-PrizeTab-content">
+            <!-- hd -->
+            <ul class="hd">
+                <li class="active">可使用（1）</li>
+                <li>已使用（2）</li>
+                <li>已过期（2）</li>
+            </ul>
+            <!-- bd -->
+            <div class="bd" style="display: block">
+                <div class="prize activeBg">
+                    <h3><strong>￥</strong><b>20</b><font>元代金券</font></h3>
+                    <span>满200元可使用</span>
+                    <p>使用日期：2017年9月30日-2017年10月30日</p>
+                </div>
+            </div>
+            <div class="bd">
+                <div class="prize grayBg">
+                    <h3><strong>￥</strong><b>20</b><font>元代金券</font></h3>
+                    <span>满200元可使用</span>
+                    <p>使用日期：2017年9月30日-2017年10月30日</p>
+                    <em class="icon_ysy"></em>
+                </div>
+                <div class="prize grayBg">
+                    <h3><strong>￥</strong><b>20</b><font>元代金券</font></h3>
+                    <span>满200元可使用</span>
+                    <p>使用日期：2017年9月30日-2017年10月30日</p>
+                    <em class="icon_ysy"></em>
+                </div>
+            </div>
+            <div class="bd">
+                <div class="prize grayBg">
+                    <h3><strong>￥</strong><b>20</b><font>元代金券</font></h3>
+                    <span>满200元可使用</span>
+                    <p>使用日期：2017年9月30日-2017年10月30日</p>
+                    <em class="icon_ygq"></em>
+                </div>
+                <div class="prize grayBg">
+                    <h3><strong>￥</strong><b>20</b><font>元代金券</font></h3>
+                    <span>满200元可使用</span>
+                    <p>使用日期：2017年9月30日-2017年10月30日</p>
+                    <em class="icon_ygq"></em>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function () {
+            var $li=$(".m-915EatQD-PrizeTab-content .hd li");
+            var $bd=$(".m-915EatQD-PrizeTab-content .bd");
+            $li.on('click',function () {
+                var _index=$(this).index();
+                $(this).addClass("active").siblings().removeClass("active");
+                $bd.eq(_index).show().siblings(".bd").hide();
+            });
+        });
+    </script>
+</body>
+</html>

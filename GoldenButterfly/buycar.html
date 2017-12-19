@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="vendor/YDUI/css/ydui.css"/>
+        <link rel="stylesheet" href="vendor/loaders.css">        
+		<link rel="stylesheet" type="text/css" href="dist/css/cfc/stylesheet.css"/>
+		<link rel="stylesheet" href="dist/fonts/iconfont.css">
+		<script src="vendor/YDUI/js/ydui.flexible.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+        <div class="loader">
+	        <div class="loader-inner ball-grid-pulse">
+	          <div></div>
+	          <div></div>
+	          <div></div>
+	          <div></div>
+	          <div></div>
+	          <div></div>
+	          <div></div>
+	          <div></div>
+	          <div></div>
+	        </div>
+	     </div>
+        <div class="buycar">
+            <div class="buycar-header bg-header">
+                <div class="m-navbar">
+                    <a href="#" class="navbar-item">
+                        <i class="back-ico"></i>
+                    </a>
+                    <div class="navbar-center">
+                        <span class="navbar-title">购物车</span>
+                    </div>
+                    <div class="navbar-item">
+                        <p class="p1" id="all">全选</p>
+                    </div>
+                </div>
+            </div>
+            <div class="buycar-list">
+                <div class="m-cell">
+                    <label class="cell-item">
+                        <div class="m-list list-theme4">
+                            <div class="list-item">
+                                <div class="list-img">
+                                    <a href=""><img src="img/c_wrapper/buycar/IMG_0984.png"></a>
+                                </div>
+                                <div class="list-mes">
+                                    <h3 class="list-title">套餐1:100节课程   送50节课程</h3>
+                                    <div class="list-mes-item">
+                                        <div>
+                                            <span class="list-price"><em>价格：</em> ¥<i class="jiage1">35000</i></span>
+                                        </div>
+                                    </div>
+                                    <span class="m-spinner" data-ydui-spinner="{input: '.J_Input', add: '.J_Add', minus: '.J_Del'}"><!-- 添加data-ydui-spinner属性并添加参数即可 -->
+                                        <a href="javascript:;" class="J_Del iconfont icon-jianshao"></a>
+                                        <input type="text" class="J_Input" placeholder=""/>
+                                        <a href="javascript:;" class="J_Add iconfont icon-jia"></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="cell-right">
+                            <input type="checkbox" name="checkbox"/>
+                            <i class="cell-checkbox-icon"></i>
+                        </label>
+                    </label>
+                    <div class="shanchu">
+                        <i class="iconfont icon-lajitong"></i>
+                    </div>
+                </div>
+                <div class="m-cell">
+                    <label class="cell-item">
+                        <div class="m-list list-theme4">
+                            <div class="list-item">
+                                <div class="list-img">
+                                    <a href=""><img src="img/c_wrapper/buycar/IMG_0984.png"></a>
+                                </div>
+                                <div class="list-mes">
+                                    <h3 class="list-title">套餐1:100节课程   送50节课程</h3>
+                                    <div class="list-mes-item">
+                                        <div>
+                                            <span class="list-price"><em>价格：</em> ¥<i class="jiage1">35000</i></span>
+                                        </div>
+                                    </div>
+                                    <span class="m-spinner" data-ydui-spinner="{input: '.J_Input', add: '.J_Add', minus: '.J_Del'}"><!-- 添加data-ydui-spinner属性并添加参数即可 -->
+                                        <a href="javascript:;" class="J_Del iconfont icon-jianshao"></a>
+                                        <input type="text" class="J_Input" placeholder=""/>
+                                        <a href="javascript:;" class="J_Add iconfont icon-jia"></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="cell-right">
+                            <input type="checkbox" name="checkbox"/>
+                            <i class="cell-checkbox-icon"></i>
+                        </label>
+                    </label>
+                    <div class="shanchu">
+                        <i class="iconfont icon-lajitong"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buycar-footer">
+            <ul>
+                <a href="">
+                    <li>
+                        <p class="p2">金额</p>
+                        <i>￥<span class="jiage2">35000</span></i>
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        <p class="p3">继续购物</p>
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        <p class="p4">去结算</p>
+                    </li>
+                </a>
+            </ul>
+        </div>
+	<script src="https://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+	<script src="vendor/ejs.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="vendor/YDUI/js/ydui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="vendor/global.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dist/js/cfc/buycar.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

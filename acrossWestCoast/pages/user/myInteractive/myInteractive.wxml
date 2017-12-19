@@ -1,0 +1,29 @@
+<import src="../../../template/lists" />
+<block wx:if="{{total_count==0}}">
+  <view class='no-pinglun'>快去和小伙伴们互动吧</view>
+</block>
+<block wx:else>
+  <template is="lists" data="{{lists}}" />
+</block>
+
+<!-- <block wx:for="{{lists}}" wx:key="{{index}}">
+  <view class='myInteractive'>
+    <view class='myInteractive-image'>
+      <image src='{{item.user.avatar32}}'></image>
+    </view>
+    <view class='myInteractive-mid'>
+      <view class='myInteractive-mid-title'><text>{{item.comments.user.nickname}}</text>评论了你的话题</view>
+      <view class='myInteractive-mid-contant'>{{item.comments.content}}</view>
+      <view class='myInteractive-mid-date'>{{item.comments.create_time}}</view>
+    </view>
+    <view class='myInteractive-right'>
+      <view class='myInteractive-right-commit'>{{item.content}}</view>
+      <view  class='myInteractive-right-zan'>
+        <image src='../../../images/icon/icon_zan.png'></image>
+      </view>
+      <view class='myInteractive-right-pinglun'>
+        <image src='../../../images/icon/icon_circle.png' ></image>
+      </view>
+    </view>
+  </view>
+</block> -->

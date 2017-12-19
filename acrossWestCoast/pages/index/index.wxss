@@ -1,0 +1,113 @@
+/* @import '../../template/lists.wxss'; */
+page{
+  background: #f9f9f9;
+  height: 100%; 
+}
+.swiper-tab{  
+    width: 100%;
+    text-align: center;  
+    line-height: 80rpx;
+    display: flex; 
+    margin: 0 auto;
+    height: 8%;
+  }  
+.swiper-tab-lists{  
+    font-size: 35rpx;  
+    color: #999;  
+    flex: 1; 
+    /* float: left; */
+} 
+ .swiper-tab-list{
+    padding-bottom: 15rpx;
+    
+} 
+.on{ 
+    color: #00b0ec;  
+    border-bottom: 10rpx solid #00b0ec;
+  }  
+.swiper-box{ 
+  display: block;  
+  height: 92%;   
+  width: 100%; 
+  overflow: hidden;
+  position: relative;
+  text-align: center;  
+}   
+.swiper-item-one{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.swiper-img{
+  width: 100%;
+  height: 350rpx;
+  position: relative;
+  margin-bottom: 20rpx;
+}
+.back-img{
+  width: 100%;
+  height: 350rpx;
+  margin-bottom: 20rpx;
+}
+.icon{
+  width: 20rpx;
+  height: 20rpx;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.index-news-text{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background: rgba(51, 51, 51, 0.5);
+  width: 70%;
+  height: 50%;
+}
+.index-news-text view{
+  color: #fff;
+  font-size: 40rpx;
+  width: 80%;
+  height: 50%;
+  margin: 0 auto;
+}
+.index-news-text .view1{
+  line-height: 100rpx;
+  border-bottom: 1px solid #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.index-news-text .view2{
+  line-height: 100rpx;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+navigator{
+  width: 100%;
+  height: 100%;
+}
+swiper-item{
+  overflow: auto;
+}
+.hidden{
+  width: 100%;
+  height: 90rpx;
+  text-align: center;
+  line-height: 90rpx;
+  color: #999;
+  font-size: 30rpx;
+}
+ .no-pinglun{
+  width: 100%;
+  height: 92rpx;
+  line-height: 92rpx;
+  text-align: center;
+  font-size: 35rpx;
+  color: #999;
+} 

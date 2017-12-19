@@ -1,0 +1,48 @@
+<view class='person-top'>
+  <image class='person-top-back' src='../../images/myself/back.png'></image>
+  <view class='person-top-image'>
+    <image src='{{userInfo.avatarUrl}}'></image>
+  </view>
+  <view class='person-top-name'>{{userInfo.nickName}}</view>
+</view>
+<!-- 列表 -->
+<block wx:for='{{array}}' wx:key="{{index}}">
+  <navigator url='{{item.navig}}'>
+    <view class="person-contant-list">
+      <view class='person-contant-list-icon'>
+        <image src='{{item.imgs}}'></image>
+      </view>
+      <view class='person-contant-list-title'>{{item.title}}</view>
+      <view class='person-contant-list-more'>
+        <image src='../../images/icon/icon_more.png'></image>
+      </view>
+    </view>
+  </navigator>
+</block>
+<view class="person-contant-list" bindtap='toSuggestion'>
+  <view class='person-contant-list-icon'>
+    <image src='../../images/icon/icon_my5.png'></image>
+  </view>
+  <view class='person-contant-list-title'>我的活动</view>
+  <view class='person-contant-list-more'>
+    <image src='../../images/icon/icon_more.png'></image>
+  </view>
+</view>
+<!-- <view class="person-contant-list">
+  <view class='person-contant-list-icon'>
+    <image src='../../images/icon/icon_my6.png'></image>
+  </view>
+  <view class='person-contant-list-title'>清除缓存</view>
+  <view class='person-contant-list-more'>
+    <image src='../../images/icon/icon_more.png'></image>
+  </view>
+</view> -->
+<view class="person-contant-list" bindtap='makePhoneCall'>
+  <view class='person-contant-list-icon'>
+    <image src='../../images/icon/icon_my7.png'></image>
+  </view>
+  <view class='person-contant-list-title person-contant-list-kefu'>客服电话</view>
+  <view class='person-contant-list-more person-contant-list-phone'>
+    <view>0642-888888</view>
+  </view>
+</view>

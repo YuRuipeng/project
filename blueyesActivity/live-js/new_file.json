@@ -1,0 +1,41 @@
+[
+    {
+        "content": "测试1",
+        "dateCreated": 1507638872000,
+        "endTime": 1507638865000,
+        "flag": "1",
+        "id": 1,
+        "imgId": "192.168.1.43:8080/qdrat//img/gallery/222222.png",
+        "m3u8Url": "123123",
+        "organizationCompanyId": 1,
+        "startTime": 1507638864000,
+        "title": "测试1",
+        "userCreated": 11
+    },
+    {
+        "content": "测试2",
+        "dateCreated": 1507710030000,
+        "endTime": 1507710024000,
+        "flag": "1",
+        "id": 2,
+        "imgId": "192.168.1.43:8080/qdrat//img/gallery/222222.png",
+        "m3u8Url": "1321",
+        "organizationCompanyId": 1,
+        "startTime": 1507710022000,
+        "title": "测试2",
+        "userCreated": 11
+    },
+    {
+        "content": "测试4",
+        "dateCreated": 1507712267000,
+        "endTime": 1507107461000,
+        "flag": "1",
+        "id": 3,
+        "imgId": "192.168.1.43:8080/qdrat//img/gallery/222222.png",
+        "m3u8Url": "123123",
+        "organizationCompanyId": 1,
+        "startTime": 1507885057000,
+        "title": "测试3",
+        "userCreated": 11
+    }
+]
